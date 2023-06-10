@@ -22,6 +22,7 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     List<UserDto> obtenerLista();
 
 
+
     //@Query(value = "SELECT new ubilapaz.edu.bo.clasetaller.dto.UserDto(u.username, u.nombre, r.rol) FROM User u inner join RolUser on u.id=r.UserId order by id desc")
     //List<UserDto> obtenerLista2();
 }
